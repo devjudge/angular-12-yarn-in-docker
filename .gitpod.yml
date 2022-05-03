@@ -2,8 +2,8 @@
 tasks:
   - name: 'Terminal 1'
     openMode: split-left
-    init: npm install # runs during prebuild
-    command: npm start
+    init: yarn install # runs during prebuild
+    command: yarn start
   - name: 'Terminal 2'
     openMode: split-right
     init: chmod 0755 ./chrome-test-setup.sh # runs during prebuild

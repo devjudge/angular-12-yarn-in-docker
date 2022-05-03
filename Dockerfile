@@ -5,8 +5,8 @@ WORKDIR /app
 
 COPY . /app
 
-# Pre-Build (download all node modules, http-server, etc)
-RUN wget https://codejudge-starter-repo-artifacts.s3.ap-south-1.amazonaws.com/web-micro-project/typescript/angular/12/npm/pre-build.sh
+# Pre-Build (download all node modules, http-server, etc using yarn)
+RUN wget https://codejudge-starter-repo-artifacts.s3.ap-south-1.amazonaws.com/web-micro-project/typescript/angular/12/yarn/pre-build.sh
 RUN chmod 775 ./pre-build.sh
 RUN ./pre-build.sh
 
